@@ -29,20 +29,20 @@ int main() {
     initscr();
     echo();
 
-    printw("Ingrese el primer número: \n");
+    printw("Enter the first number: \n");
     refresh();
     scanw("%lf", &num1);
 
-    printw("Ingrese el segundo número: \n");
+    printw("Enter the second number: \n");
     refresh();
     scanw("%lf", &num2);
 
 
-    printw("Elija una operación (+, -, *, /): \n");
-    printw("1. Suma (+)\n");
-    printw("2. Resta (-)\n");
-    printw("3. Multiplicación (*)\n");
-    printw("4. División (/)\n");
+    printw("Choose an operation (+, -, *, /): \n");
+    printw("1. Addition (+)\n");
+    printw("2. Subtraction (-)\n");
+    printw("3. Multiplication (*)\n");
+    printw("4. Division (/)\n");
 
     refresh();
 
@@ -52,37 +52,38 @@ int main() {
 
     if (input == '1') 
     {
-        printw("El resultado es: %lf\n", sum(num1, num2));
+        printw("The result is: %lf\n", sum(num1, num2));
         refresh();
     }
 
     if (input == '2') 
     {
-        printw("El resultado es: %lf\n", rest(num1, num2));
+        printw("The result is: %lf\n", rest(num1, num2));
         refresh();
     }
 
     if (input == '3') 
     {
-        printw("El resultado es: %lf\n", multiply(num1, num2));
+        printw("The result is: %lf\n", multiply(num1, num2));
         refresh();
     }
 
     if (input == '4') 
     {
-        printw("El resultado es: %lf\n", divide(num1, num2));
+        printw("The result is: %lf\n", divide(num1, num2));
         refresh();
     }
 
     if (input != '1' && input != '2' && input != '3' && input != '4')
     {
-        printw("Opción no válida.\n");
+        printw("Invalid option.\n");
     }
 
-    printw("\nPresione cualquier tecla para salir...");
+    printw("\nPress any key to exit...");
     refresh();
     getch();
     endwin();
     return 0;
 
 }
+

@@ -3,7 +3,6 @@
 #include <ncurses.h>
 #include <math.h>
 #include <gmp.h>
-#include <gtk/gtk.h>    // Soon
 
 int main() {
     double result = 0.0;    // Acumulador
@@ -175,3 +174,4 @@ int main() {
     endwin();
     return 0;
 }
+
